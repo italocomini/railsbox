@@ -10,8 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # please see the online documentation at vagrantup.com.
 
   # Every Vagrant virtual environment requires a box to build off of.
-  #config.vm.box = "ubuntu/trusty32"
-  config.vm.box = "C:/Downloads/trusty-server-cloudimg-i386-vagrant-disk1.box"
+  config.vm.box = "ubuntu/trusty32"
   config.vm.provision :shell, path: 'bootstrap.sh', keep_color: true
 
   # Disable automatic box update checking. If you disable this, then
